@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Додати завдання — СтудТрекер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="tasks.html">Завдання</a></li>
+          <li><a href="subjects.html">Предмети</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a class="active" href="add-task.html">Додати завдання</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Нове завдання</h1>
+    <p class="lead">Заповніть назву, предмет і дедлайн — решта за бажанням. Це макет: кнопка «Зберегти» лише веде до списку завдань.</p>
+
+    <form class="form card" action="tasks.html" method="get">
+
+      <div class="field">
+        <label for="title">Назва завдання</label>
+        <input type="text" id="title" name="title" placeholder="Наприклад: Лабораторна №10" required>
+      </div>
+
+      <div class="field">
+        <label for="subject">Предмет</label>
+        <select id="subject" name="subject" required>
+          <option value="">— оберіть предмет —</option>
+          <option>Програмування</option>
+          <option>Операційні системи</option>
+          <option>Веб-програмування</option>
+          <option>Вища математика</option>
+          <option>Англійська мова</option>
+          <option>Основи Інтернету речей</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="deadline">Дедлайн</label>
+        <input type="date" id="deadline" name="deadline" required>
+        <span class="hint">Завдання з дедлайном у найближчі 2 дні буде підсвічене червоним, а в межах тижня — жовтим.</span>
+      </div>
+
+      <fieldset class="field">
+        <legend class="legend-title">Статус</legend>
+        <div class="choices">
+          <label><input type="radio" name="status" value="todo" checked> Не розпочато</label>
+          <label><input type="radio" name="status" value="progress"> У процесі</label>
+          <label><input type="radio" name="status" value="done"> Виконано</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <span class="legend-title">Додатково</span>
+        <div class="choices">
+          <label><input type="checkbox" name="important"> Позначити як важливе</label>
+          <label><input type="checkbox" name="reminder" checked> Нагадати за день до дедлайну</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="note">Нотатка</label>
+        <textarea id="note" name="note" rows="3" placeholder="Вимоги, посилання, що ще треба зробити…"></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn">Зберегти завдання</button>
+        <a class="btn secondary" href="tasks.html">Скасувати</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>
