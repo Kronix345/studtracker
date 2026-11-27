@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Завдання — СтудТрекер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a href="index.html">Головна</a></li>
+          <li><a class="active" href="tasks.html">Завдання</a></li>
+          <li><a href="subjects.html">Предмети</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a href="add-task.html">Додати завдання</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Мої завдання</h1>
+    <p class="lead">Усі завдання, відсортовані за найближчим дедлайном. Сьогодні — п’ятниця, 27 листопада.</p>
+
+    <section class="stats" aria-label="Зведення">
+      <div class="card stat"><span class="num">11</span><span class="label">Усього завдань</span></div>
+      <div class="card stat urgent"><span class="num">2</span><span class="label">Терміново (до 2 днів)</span></div>
+      <div class="card stat soon"><span class="num">3</span><span class="label">У межах тижня</span></div>
+      <div class="card stat done"><span class="num">4</span><span class="label">Виконано</span></div>
+    </section>
+
+    <ul class="legend" aria-label="Умовні позначення">
+      <li><span class="dot urgent"></span> дедлайн за 2 дні або менше</li>
+      <li><span class="dot soon"></span> дедлайн у межах тижня</li>
+      <li><span class="dot later"></span> є час</li>
+      <li><span class="dot done"></span> виконано</li>
+    </ul>
+
+    <div class="actions actions-below">
+      <a class="btn" href="add-task.html">+ Додати завдання</a>
+      <a class="btn secondary" href="subjects.html">Групувати за предметами</a>
+    </div>
+
+    <h2 class="first-heading">Активні</h2>
+    <ul class="task-list">
+
+      <li class="task urgent">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №8: SSH і Samba</p>
+          <div class="meta"><span class="badge subject">Операційні системи</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-28">Сб, 28 листопада · завтра</time>
+          <span class="badge progress">У процесі</span>
+        </div>
+      </li>
+
+      <li class="task urgent">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №7: підпрограми та виключення</p>
+          <div class="meta"><span class="badge subject">Програмування</span> <span class="badge important">Важливо</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-29">Нд, 29 листопада · через 2 дні</time>
+          <span class="badge todo">Не розпочато</span>
+        </div>
+      </li>
+
+      <li class="task soon">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Контрольна робота: невизначені інтеграли</p>
+          <div class="meta"><span class="badge subject">Вища математика</span> <span class="badge important">Важливо</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-12-01">Вт, 1 грудня · через 4 дні</time>
+          <span class="badge todo">Не розпочато</span>
+        </div>
+      </li>
+
+      <li class="task soon">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №4: вебсторінка з CSS</p>
+          <div class="meta"><span class="badge subject">Веб-програмування</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-12-03">Чт, 3 грудня · через 6 днів</time>
+          <span class="badge progress">У процесі</span>
+        </div>
+      </li>
+
+      <li class="task soon">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Есе «My future profession»</p>
+          <div class="meta"><span class="badge subject">Англійська мова</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-12-04">Пт, 4 грудня · через 7 днів</time>
+          <span class="badge todo">Не розпочато</span>
+        </div>
+      </li>
+
+      <li class="task">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Реферат: сенсори в Інтернеті речей</p>
+          <div class="meta"><span class="badge subject">Основи Інтернету речей</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-12-10">Чт, 10 грудня</time>
+          <span class="badge todo">Не розпочато</span>
+        </div>
+      </li>
+
+      <li class="task">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №9: підпрограми з масивами</p>
+          <div class="meta"><span class="badge subject">Програмування</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-12-14">Пн, 14 грудня</time>
+          <span class="badge todo">Не розпочато</span>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Виконані</h2>
+    <ul class="task-list">
+
+      <li class="task done">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №6: розгалуження</p>
+          <div class="meta"><span class="badge subject">Програмування</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-24">Вт, 24 листопада</time>
+          <span class="badge finished">Виконано</span>
+        </div>
+      </li>
+
+      <li class="task done">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Практична: дії з матрицями</p>
+          <div class="meta"><span class="badge subject">Вища математика</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-25">Ср, 25 листопада</time>
+          <span class="badge finished">Виконано</span>
+        </div>
+      </li>
+
+      <li class="task done">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Тест із граматики</p>
+          <div class="meta"><span class="badge subject">Англійська мова</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-23">Пн, 23 листопада</time>
+          <span class="badge finished">Виконано</span>
+        </div>
+      </li>
+
+      <li class="task done">
+        <span class="bar"></span>
+        <div>
+          <p class="title">Лабораторна №5: диски та розділи</p>
+          <div class="meta"><span class="badge subject">Операційні системи</span></div>
+        </div>
+        <div class="side">
+          <time class="deadline" datetime="2026-11-20">Пт, 20 листопада</time>
+          <span class="badge finished">Виконано</span>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>

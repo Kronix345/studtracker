@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СтудТрекер — трекер навчальних завдань і дедлайнів</title>
+  <meta name="description" content="СтудТрекер збирає всі навчальні завдання в одному місці, сортує їх за дедлайном і групує за предметами.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a class="active" href="index.html">Головна</a></li>
+          <li><a href="tasks.html">Завдання</a></li>
+          <li><a href="subjects.html">Предмети</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a href="add-task.html">Додати завдання</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Жодного пропущеного дедлайну</h1>
+      <p>«СтудТрекер» збирає всі навчальні завдання в одному місці, показує найтерміновіші зверху й підсвічує ті, що вже близько. Більше ніяких нотаток у телефоні, паперових листків і «я ж пам’ятав».</p>
+      <div class="actions">
+        <a class="btn" href="tasks.html">Відкрити мої завдання</a>
+        <a class="btn secondary" href="add-task.html">Додати завдання</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="features">
+      <h2 id="features" class="first-heading">Що вміє «СтудТрекер»</h2>
+      <div class="grid cols-3">
+        <article class="card">
+          <div class="feature-icon">📅</div>
+          <h3>Дедлайни під контролем</h3>
+          <p>Список відсортований за найближчим терміном. Завдання, які горять, червоні; ті, що в межах тижня, — жовті.</p>
+        </article>
+        <article class="card">
+          <div class="feature-icon">📚</div>
+          <h3>Групування за предметами</h3>
+          <p>Відкрийте один курс і побачте все, що з ним пов’язано, разом із відсотком виконаного.</p>
+        </article>
+        <article class="card">
+          <div class="feature-icon">🚦</div>
+          <h3>Статуси завдань</h3>
+          <p>«Не розпочато», «у процесі», «виконано» — завжди видно, на якому етапі кожна лабораторна чи реферат.</p>
+        </article>
+        <article class="card">
+          <div class="feature-icon">⭐</div>
+          <h3>Пріоритети</h3>
+          <p>Позначайте важливі роботи — модульні, курсові — щоб вони не губилися серед дрібних завдань.</p>
+        </article>
+        <article class="card">
+          <div class="feature-icon">🔔</div>
+          <h3>Нагадування</h3>
+          <p>Нагадування за день до дедлайну, щоб не згадувати про лабораторну в останню ніч.</p>
+        </article>
+        <article class="card">
+          <div class="feature-icon">🗓️</div>
+          <h3>Календар тижня</h3>
+          <p>Усі дедлайни тижня на одному екрані: одразу видно, на які дні припадає найбільше роботи.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="soon">
+      <h2 id="soon">Найближчі дедлайни</h2>
+      <ul class="task-list">
+        <li class="task urgent">
+          <span class="bar"></span>
+          <div>
+            <p class="title">Лабораторна №8: SSH і Samba</p>
+            <div class="meta"><span class="badge subject">Операційні системи</span></div>
+          </div>
+          <div class="side">
+            <span class="deadline">Сб, 28 листопада</span>
+            <span class="badge progress">У процесі</span>
+          </div>
+        </li>
+        <li class="task urgent">
+          <span class="bar"></span>
+          <div>
+            <p class="title">Лабораторна №7: підпрограми та виключення</p>
+            <div class="meta"><span class="badge subject">Програмування</span> <span class="badge important">Важливо</span></div>
+          </div>
+          <div class="side">
+            <span class="deadline">Нд, 29 листопада</span>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+        <li class="task soon">
+          <span class="bar"></span>
+          <div>
+            <p class="title">Контрольна робота: невизначені інтеграли</p>
+            <div class="meta"><span class="badge subject">Вища математика</span> <span class="badge important">Важливо</span></div>
+          </div>
+          <div class="side">
+            <span class="deadline">Вт, 1 грудня</span>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+      </ul>
+      <div class="actions">
+        <a class="btn secondary" href="tasks.html">Усі завдання →</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="how">
+      <h2 id="how">Як це працює</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>1. Додайте завдання</h3><p>Назва, предмет і дедлайн — цього достатньо.</p></div>
+        <div class="card"><h3>2. Дивіться, що горить</h3><p>Найближчі терміни завжди зверху, а колір підказує терміновість.</p></div>
+        <div class="card"><h3>3. Змінюйте статус</h3><p>Позначайте прогрес і бачте, скільки вже зроблено з кожного предмета.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>

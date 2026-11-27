@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Календар тижня — СтудТрекер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="tasks.html">Завдання</a></li>
+          <li><a href="subjects.html">Предмети</a></li>
+          <li><a class="active" href="calendar.html">Календар</a></li>
+          <li><a href="add-task.html">Додати завдання</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Календар тижня</h1>
+    <p class="lead">Усі дедлайни по днях: одразу видно, коли буде найбільше роботи.</p>
+
+    <ul class="legend" aria-label="Умовні позначення">
+      <li><span class="dot urgent"></span> дедлайн за 2 дні або менше</li>
+      <li><span class="dot soon"></span> дедлайн у межах тижня</li>
+      <li><span class="dot later"></span> є час</li>
+      <li><span class="dot done"></span> виконано</li>
+    </ul>
+
+    <h2 class="first-heading">Цей тиждень: 23 – 29 листопада</h2>
+    <div class="week">
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Пн</span><span class="day-num">23</span></div>
+        <div class="event done">Тест із граматики<small>Англійська мова</small></div>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Вт</span><span class="day-num">24</span></div>
+        <div class="event done">Лабораторна №6<small>Програмування</small></div>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Ср</span><span class="day-num">25</span></div>
+        <div class="event done">Практична: матриці<small>Вища математика</small></div>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Чт</span><span class="day-num">26</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+
+      <div class="day today">
+        <div class="day-head"><span class="day-name">Пт · сьогодні</span><span class="day-num">27</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+
+      <div class="day weekend">
+        <div class="day-head"><span class="day-name">Сб</span><span class="day-num">28</span></div>
+        <div class="event urgent">Лабораторна №8: SSH і Samba<small>Операційні системи</small></div>
+      </div>
+
+      <div class="day weekend">
+        <div class="day-head"><span class="day-name">Нд</span><span class="day-num">29</span></div>
+        <div class="event urgent">Лабораторна №7: підпрограми та виключення<small>Програмування</small></div>
+      </div>
+    </div>
+
+    <h2>Наступний тиждень: 30 листопада – 6 грудня</h2>
+    <div class="week">
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Пн</span><span class="day-num">30</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Вт</span><span class="day-num">1</span></div>
+        <div class="event soon">Контрольна: інтеграли<small>Вища математика</small></div>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Ср</span><span class="day-num">2</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Чт</span><span class="day-num">3</span></div>
+        <div class="event soon">Лабораторна №4: вебсторінка з CSS<small>Веб-програмування</small></div>
+      </div>
+
+      <div class="day">
+        <div class="day-head"><span class="day-name">Пт</span><span class="day-num">4</span></div>
+        <div class="event soon">Есе «My future profession»<small>Англійська мова</small></div>
+      </div>
+
+      <div class="day weekend">
+        <div class="day-head"><span class="day-name">Сб</span><span class="day-num">5</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+
+      <div class="day weekend">
+        <div class="day-head"><span class="day-name">Нд</span><span class="day-num">6</span></div>
+        <span class="empty">немає дедлайнів</span>
+      </div>
+    </div>
+
+    <div class="actions actions-spaced">
+      <a class="btn" href="add-task.html">+ Додати завдання</a>
+      <a class="btn secondary" href="tasks.html">Список завдань</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Про проєкт — СтудТрекер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="tasks.html">Завдання</a></li>
+          <li><a href="subjects.html">Предмети</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a href="add-task.html">Додати завдання</a></li>
+          <li><a class="active" href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Про проєкт</h1>
+    <p class="lead">«СтудТрекер» — навчальний проєкт команди «Здав-Не-Здав»: макет застосунку для студентів, зроблений лише на HTML і CSS.</p>
+
+    <section aria-labelledby="idea">
+      <h2 id="idea" class="first-heading">Для кого й навіщо</h2>
+      <div class="card">
+        <p>Головний користувач — студент 1 курсу, який одночасно вивчає 5–6 предметів, і з кожного має свої лабораторні, звіти й дедлайни. Зараз такий студент тримає завдання в нотатках телефону, у чатах групи, на папірцях або просто в пам’яті, тому дедлайни легко пропустити.</p>
+        <p class="no-margin-bottom">На відміну від Google Calendar чи Todoist, які розраховані на будь-які справи, «СтудТрекер» побудований навколо навчання: кожне завдання прив’язане до предмета, і можна відкрити все, що стосується одного курсу.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="features">
+      <h2 id="features">Основні функції</h2>
+      <div class="table-wrap">
+        <table class="plain">
+          <thead>
+            <tr><th>Функція</th><th>Що може зробити користувач</th><th>Сторінка</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Додавання завдань</td><td>Створити завдання з назвою, предметом і дедлайном</td><td><a href="add-task.html">Додати завдання</a></td></tr>
+            <tr><td>Статуси</td><td>Позначити етап: «не розпочато», «у процесі», «виконано»</td><td><a href="tasks.html">Завдання</a></td></tr>
+            <tr><td>Список за дедлайнами</td><td>Бачити найтерміновіше зверху, з підсвічуванням кольором</td><td><a href="tasks.html">Завдання</a></td></tr>
+            <tr><td>Групування за предметом</td><td>Відкрити всі завдання одного курсу й побачити відсоток виконаного</td><td><a href="subjects.html">Предмети</a></td></tr>
+            <tr><td>Пріоритети</td><td>Позначити завдання як важливе</td><td><a href="add-task.html">Додати завдання</a></td></tr>
+            <tr><td>Нагадування</td><td>Отримати нагадування за день до дедлайну</td><td><a href="add-task.html">Додати завдання</a></td></tr>
+            <tr><td>Календар тижня</td><td>Переглянути дедлайни тижня по днях</td><td><a href="calendar.html">Календар</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="team">
+      <h2 id="team">Команда</h2>
+      <div class="grid cols-3">
+        <article class="card team-card">
+          <div class="avatar">СА</div>
+          <h3>Синюк Антон</h3>
+          <p class="role">Frontend</p>
+          <p>Структура сторінок на HTML, оформлення на CSS, макети екранів.</p>
+        </article>
+        <article class="card team-card">
+          <div class="avatar">ГД</div>
+          <h3>Грендач Данило</h3>
+          <p class="role">Проєктний менеджер</p>
+          <p>План робіт на семестр, розподіл завдань, контроль термінів здачі.</p>
+        </article>
+        <article class="card team-card">
+          <div class="avatar">ЛС</div>
+          <h3>Леус Станіслав</h3>
+          <p class="role">QA</p>
+          <p>Перевірка сторінок: валідність HTML/CSS, посилання, вигляд на ПК і телефоні.</p>
+        </article>
+      </div>
+      <p class="note">Ролі попередні й можуть змінюватися протягом семестру.</p>
+    </section>
+
+    <section aria-labelledby="legend">
+      <h2 id="legend">Умовні позначення кольорів</h2>
+      <ul class="legend">
+        <li><span class="dot urgent"></span> дедлайн за 2 дні або менше</li>
+        <li><span class="dot soon"></span> дедлайн у межах тижня</li>
+        <li><span class="dot later"></span> є час</li>
+        <li><span class="dot done"></span> виконано</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>

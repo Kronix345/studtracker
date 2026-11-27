@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Предмети — СтудТрекер</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✓</span> СтудТрекер</a>
+      <nav aria-label="Основна навігація">
+        <ul class="nav">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="tasks.html">Завдання</a></li>
+          <li><a class="active" href="subjects.html">Предмети</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a href="add-task.html">Додати завдання</a></li>
+          <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Завдання за предметами</h1>
+    <p class="lead">Оберіть курс, щоб побачити все, що з ним пов’язано, і скільки вже виконано.</p>
+
+    <ul class="subject-nav" aria-label="Перехід до предмета">
+      <li><a href="#prog">Програмування</a></li>
+      <li><a href="#os">Операційні системи</a></li>
+      <li><a href="#web">Веб-програмування</a></li>
+      <li><a href="#math">Вища математика</a></li>
+      <li><a href="#eng">Англійська мова</a></li>
+      <li><a href="#iot">Основи Інтернету речей</a></li>
+    </ul>
+
+    <section class="subject-block card" id="prog">
+      <div class="subject-head">
+        <h2>Програмування</h2>
+        <span class="count">Виконано 1 з 3 · 33%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-33"></div></div>
+      <ul class="task-list">
+        <li class="task urgent">
+          <span class="bar"></span>
+          <div>
+            <p class="title">Лабораторна №7: підпрограми та виключення</p>
+            <div class="meta"><span class="badge important">Важливо</span></div>
+          </div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-29">Нд, 29 листопада</time>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+        <li class="task">
+          <span class="bar"></span>
+          <div><p class="title">Лабораторна №9: підпрограми з масивами</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-12-14">Пн, 14 грудня</time>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+        <li class="task done">
+          <span class="bar"></span>
+          <div><p class="title">Лабораторна №6: розгалуження</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-24">Вт, 24 листопада</time>
+            <span class="badge finished">Виконано</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subject-block card" id="os">
+      <div class="subject-head">
+        <h2>Операційні системи</h2>
+        <span class="count">Виконано 1 з 2 · 50%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-50"></div></div>
+      <ul class="task-list">
+        <li class="task urgent">
+          <span class="bar"></span>
+          <div><p class="title">Лабораторна №8: SSH і Samba</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-28">Сб, 28 листопада</time>
+            <span class="badge progress">У процесі</span>
+          </div>
+        </li>
+        <li class="task done">
+          <span class="bar"></span>
+          <div><p class="title">Лабораторна №5: диски та розділи</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-20">Пт, 20 листопада</time>
+            <span class="badge finished">Виконано</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subject-block card" id="web">
+      <div class="subject-head">
+        <h2>Веб-програмування</h2>
+        <span class="count">Виконано 0 з 1 · 0%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-0"></div></div>
+      <ul class="task-list">
+        <li class="task soon">
+          <span class="bar"></span>
+          <div><p class="title">Лабораторна №4: вебсторінка з CSS</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-12-03">Чт, 3 грудня</time>
+            <span class="badge progress">У процесі</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subject-block card" id="math">
+      <div class="subject-head">
+        <h2>Вища математика</h2>
+        <span class="count">Виконано 1 з 2 · 50%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-50"></div></div>
+      <ul class="task-list">
+        <li class="task soon">
+          <span class="bar"></span>
+          <div>
+            <p class="title">Контрольна робота: невизначені інтеграли</p>
+            <div class="meta"><span class="badge important">Важливо</span></div>
+          </div>
+          <div class="side">
+            <time class="deadline" datetime="2026-12-01">Вт, 1 грудня</time>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+        <li class="task done">
+          <span class="bar"></span>
+          <div><p class="title">Практична: дії з матрицями</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-25">Ср, 25 листопада</time>
+            <span class="badge finished">Виконано</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subject-block card" id="eng">
+      <div class="subject-head">
+        <h2>Англійська мова</h2>
+        <span class="count">Виконано 1 з 2 · 50%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-50"></div></div>
+      <ul class="task-list">
+        <li class="task soon">
+          <span class="bar"></span>
+          <div><p class="title">Есе «My future profession»</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-12-04">Пт, 4 грудня</time>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+        <li class="task done">
+          <span class="bar"></span>
+          <div><p class="title">Тест із граматики</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-11-23">Пн, 23 листопада</time>
+            <span class="badge finished">Виконано</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subject-block card" id="iot">
+      <div class="subject-head">
+        <h2>Основи Інтернету речей</h2>
+        <span class="count">Виконано 0 з 1 · 0%</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill w-0"></div></div>
+      <ul class="task-list">
+        <li class="task">
+          <span class="bar"></span>
+          <div><p class="title">Реферат: сенсори в Інтернеті речей</p></div>
+          <div class="side">
+            <time class="deadline" datetime="2026-12-10">Чт, 10 грудня</time>
+            <span class="badge todo">Не розпочато</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <span>СтудТрекер — навчальний прототип інтерфейсу (макет, без серверної логіки)</span>
+      <span>Команда «Здав-Не-Здав» · МЕГУ</span>
+    </div>
+  </footer>
+
+</body>
+</html>
